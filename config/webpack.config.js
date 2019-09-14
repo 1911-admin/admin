@@ -292,6 +292,7 @@ module.exports = function(webpackEnv) {
         'react-native': 'react-native-web',
         'style':path.join(__dirname,'../src/style'),
         'utils':path.join(__dirname,'../src/utils'),
+        'pages':path.join(__dirname,'../src/pages'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -364,6 +365,7 @@ module.exports = function(webpackEnv) {
                 ),
                 
                 plugins: [
+                  ['import',{ "libraryName": "antd", style: true }],
                   [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
