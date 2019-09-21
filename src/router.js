@@ -10,7 +10,7 @@ import UploadBase64 from 'pages/foodadd/upload_base64.js'
 import UploadAntd from 'pages/foodadd/upload_antd.js'
 import User from 'pages/user'
 import TokenModel from 'components/tokenModel'
-
+import Pie from 'pages/echarts/pie.js'
 class RootRouter extends Component {
     render() {
         return (
@@ -28,7 +28,7 @@ class RootRouter extends Component {
                                     <Route path = '/admin/food/base64' component={UploadBase64}></Route>
                                     <Route path = '/admin/food/antd' component={UploadAntd}></Route>
                                     <Route path = '/admin/user' component={User}></Route>
-                                   
+                                    <Route path = '/admin/echarts/pie' component={Pie}></Route>
                                 </Admin>
                             )
                         }}></Route>
